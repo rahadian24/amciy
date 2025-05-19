@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelompok 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+  
+</div>
+    <!-- Judul -->
+    <div class="container-fluid p-5 bg-dark text-center text-white">
+      <h1>Games</h1>
+      <b><p>Guess Number</p></b>
+    </div>
+    <!-- Navbar -->
+    <div class="amcuy"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <!--fungsi navbar-->
+              <a class="nav-link active" aria-current="page" href="#">How To Play</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Htp">About</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Credit">Credit</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#About">Game</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  <!--HowToPlay-->
+  <div class="container my-5 text-center">
+    <h1>How To Play</h1>
+    <br>
+    <br>
+
+    <p>
+        <!--posisi About-->
+        <div id="Htp"></div>
+        <!------------------->
+        <p> Pengenalan Tombol</p>
+        <p> Tombol "Mulai": Digunakan untuk memulai permainan</p>
+            <p> Tombol "Reset": Digunakan untuk memulai ulang permainan</p>
+                <p>Tombo "Clue"  : Digunakan jika pemain kesulitan menebak angka</p>
+        <br>
+        <br>
+        <br>
+    </p>
+    </div>
+    <!--About(id posisi credit)-->
+    <div class="container my-5 text-center" id="About">
+        <h1>About</h1>
+        <br>
+        <br>
+        <P>
+            Permainan ini dibuat dengan tujuan menghibur serta mengisi waktu luang pemain.Permainan simple hanya menebak angka yang mudah dipahami semua kalangan.Adanya tombol clue untuk memudahkan pemain.
+        </P>
+        <P>MAINKAN DAN TEBAK ANGKANYA!!</P>
+        <br>
+        <br>
+        </div>
+        <!--credit(id posisi game)-->
+       
+    <!--tampilan game-->
+    <div class="amciy">
+    <div class="container my-5 text-center">
+      <h2>Guess the number 1–10</h2>
+      
+      <div class="mb-3">
+        <button class="btn btn-primary" onclick="mulaiGame()">Mulai</button>
+        <button class="btn btn-secondary" onclick="resetGame()">Reset</button>
+        <button class="btn btn-warning" onclick="beriClue()" id="clueBtn" disabled>Clue</button>
+      </div>
+  
+      <div class="mb-3">
+        <input type="number" id="tebakan" placeholder="1-10" min="1" max="10" class="form-control d-inline-block w-auto" disabled>
+        <button class="btn btn-success" onclick="cekTebakan()" id="cekBtn" disabled>Cek Jawaban</button>
+      </div>
+  
+      <div id="message" class="fw-bold mt-3"></div>
+    </div>
+</div>  
+  <div class="container my-5 text-center" id="Credit">
+        <h1>Credit</h1>  
+        <br>
+        <br>
+        <p>      
+            <strong>Credit By:"Rahadian Prawira"</strong>
+        </p>
+   
+        <p>
+           <strong>Asissted By:"ChatGPT"</strong>
+        </p>
+     </div>
+    <!--Footer-->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0"><strong>Terima kasih telah bermain dan telah berkunjung.</strong> 🎮🙏</p>
+      </footer>
